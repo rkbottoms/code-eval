@@ -14,14 +14,14 @@ int main(int argc, char const *argv[])
 	file.open(argv[1]);
 	int sum = 0;
 	while (getline(file, line)) 
-   {
-       if (!line.empty())
-       {
-           int temp = std::stoi(line);
-           sum += temp;
-       }
+   	{
+       		if (!line.empty())
+       		{
+			int temp = std::stoi(line);
+			sum += temp;
+       		}
 	}
 	std::cout << sum << std::endl;
-  file.close();
+  	file.close();
 	return 0;
 }
