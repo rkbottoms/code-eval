@@ -49,12 +49,8 @@ int main(int argc, char const *argv[])
                         std::cout << ",";
                     }
                 }
-                std::cout << std::endl;
             }
-            else
-            {
-                std::cout <<  std::endl;
-            }
+            std::cout <<  std::endl;
         }
     }
     file.close();
