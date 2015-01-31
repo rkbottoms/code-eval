@@ -8,9 +8,9 @@
 int main(int argc, char const *argv[])
 {
     std::ifstream file(argv[1]);
+    std::string line;
     while(getline(file, line))
-    {
-        std::string line;
+    {        
         std::vector<int> digits;
         if(!line.empty())
         {   
@@ -27,9 +27,9 @@ int main(int argc, char const *argv[])
             int num = std::stoi(line);
             if (num == sum)
             {
-                cout  << "True" << endl;
+                std::cout  << "True" << std::endl;
             }
-            else cout << "False" << endl;
+            else std::cout << "False" << std::endl;
         }
     }
     file.close();
