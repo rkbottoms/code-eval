@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include <cstdlib>
+#include <vector>
 
 int main(int argc, char const *argv[])
 {
