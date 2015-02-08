@@ -52,5 +52,6 @@ int main(int argc, char const *argv[])
 			}
 		}
 	}
+	file.close();
 	return 0;
 }
