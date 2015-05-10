@@ -1,0 +1,17 @@
+#!/bin/bash
+#very simple script to generate directories for code eval challenges
+#cd into directory easy, moderate, or hard based on user input
+cd $1
+# make directory from user input
+mkdir $2
+# change into directory
+cd $2
+# create cpp file and input file
+touch input.txt
+touch main.cpp
+# create script to compile and run tests on input.txt
+echo -e "g++ -std=c++11 -o main *.cpp" > test.sh
+echo -e "if [ -f main ]; then" >> test.sh
+echo -e "\t./main input.txt" >> test.sh
+echo -e "\trm main" >> test.sh
+echo -e "fi" >> test.sh
