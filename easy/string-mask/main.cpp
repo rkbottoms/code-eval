@@ -20,5 +20,6 @@ int main(int argc, char const *argv[])
 			std::cout << word << std::endl; 
 		}
 	}
+	file.close();
 	return 0;
 }
